@@ -12,6 +12,12 @@ int ReverseR(int iNo)
 {
     int iDigit=0;
     static int iRev=0;
+    
+      
+    if(iNo < 0)
+    {
+       iNo=-iNo;
+    }
 
     if(iNo!=0)
     {
