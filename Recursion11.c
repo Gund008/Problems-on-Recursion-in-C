@@ -11,6 +11,11 @@ void DisplayR(int iNo)
 {
     static int iCnt=1;
     static char ch='a';
+      
+    if(iNo < 0)
+    {
+       iNo=-iNo;
+    }
 
     if(iCnt<=iNo)
     {
