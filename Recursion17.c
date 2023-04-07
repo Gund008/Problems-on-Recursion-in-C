@@ -11,6 +11,12 @@ Output: 5  *  4  *  3 * 2 * 1 *
 void DisplayR(int iNo)
 {
     static  int iCnt=5;
+    
+    if(iNo < 0)
+    {
+       iNo=-iNo;
+    }
+    
     if(iCnt>=1)
     {
         printf("%d\t",iCnt);
