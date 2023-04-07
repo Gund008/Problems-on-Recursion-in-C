@@ -13,6 +13,11 @@ int SumR(int iNo)
 {
     static int iSum=0;
     int iDigit=0;
+    
+    if(iNo < 0)
+    {
+       iNo=-iNo;
+    }
 
     if(iNo!=0)
     {
