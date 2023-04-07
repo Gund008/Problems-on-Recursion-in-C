@@ -5,7 +5,13 @@
 int Sumdigit(int ino)
 {
     static int isum=0;
-
+    
+      
+    if(ino < 0)
+    {
+       ino=-ino;
+    }
+    
     if(ino!=0)
     {
         idigit=ino%10;
